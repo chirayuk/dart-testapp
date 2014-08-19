@@ -6,8 +6,11 @@ packages:
     source: hosted
     version: "0.18.0"
   angular:
-    description: angular
-    source: hosted
+    description:
+      ref: master
+      resolved-ref: "39a6f15a679c868d2353bfc8c0b3e1b8a08486db"
+      url: "git://github.com/chirayuk/angular.dart"
+    source: git
     version: "0.13.0"
   args:
     description: args
@@ -32,7 +35,7 @@ packages:
   di:
     description: di
     source: hosted
-    version: "2.0.2"
+    version: "2.0.1"
   html5lib:
     description: html5lib
     source: hosted
@@ -73,6 +76,10 @@ packages:
     description: source_maps
     source: hosted
     version: "0.9.3"
+  source_span:
+    description: source_span
+    source: hosted
+    version: "1.0.0"
   stack_trace:
     description: stack_trace
     source: hosted
