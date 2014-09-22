@@ -33,7 +33,11 @@ class SlowComponent {
   
   void slowTimer() {
     slowTimerStatus = _PENDING;
+    var longerTimer = new Timer(const Duration(seconds: 3), () {
+      throw "This should never be reached.";
+    });
     new Timer(const Duration(seconds: 2), () {
+      longerTimer.cancel();
       slowTimerStatus = _FINISHED;
     });
   }
